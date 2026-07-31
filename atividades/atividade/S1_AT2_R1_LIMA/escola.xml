@@ -1,0 +1,11 @@
+<escola>
+<aluno>
+<matricula>202501</matricula> 
+<curso>Informática</curso>
+<nome>Lucas &amp; Ana</nome>
+<disciplinas>
+<disciplina>Banco de Dados</disciplina>
+<disciplina>Lógica de Programação</disciplina>
+</disciplinas>
+</aluno>
+</escola>
