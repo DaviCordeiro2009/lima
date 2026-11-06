@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<!-- Define que o documento utiliza HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define o idioma da página como português brasileiro -->
+
+<head>
+    <!-- Inicia o cabeçalho do documento -->
+
+    <meta charset="UTF-8">
+    <!-- Permite utilizar acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a página para se adaptar a diferentes tamanhos de tela -->
+
+    <title>Tabela do cliente</title>
+    <!-- Define o título exibido na aba do navegador -->
+
+</head>
+<!-- Finaliza o cabeçalho -->
+
+<body>
+    <!-- Inicia o corpo da página, onde ficam os elementos visíveis -->
+
+    <h1>Fieldset 1</h1>
+    <!-- Cria um título principal de nível 1 -->
+
+    <hr>
+    <!-- Cria uma linha horizontal para separar conteúdos -->
+
+    <!-- Grupo 01 dados do cliente em fieldset --> 
+
+     <Fieldset>
+     <!-- Agrupa os campos relacionados aos dados do cliente -->
+
+<legend><strong>Dados do cliente</strong></legend>
+<!-- Define o título do grupo; strong deixa o texto em negrito -->
+
+<p>  
+    <!-- Inicia um parágrafo para organizar o campo -->
+
+    <label for="nome">Nome Completo:</label>
+    <!-- Cria um rótulo para identificar o campo de nome -->
+
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+    <!-- Cria um campo para digitar o nome completo -->
+    <!-- type="text" define que o campo aceita texto -->
+    <!-- id identifica o campo e name define seu nome no envio -->
+    <!-- placeholder apresenta uma mensagem de orientação -->
+    <!-- required torna o preenchimento obrigatório -->
+</p>
+
+<p>
+    <label for="email">Email:</label>
+    <!-- Identifica o campo de e-mail -->
+
+    <input type="email" id="email" name="email" placeholder="Digite seu email@exemplo.com" required>
+    <!-- Cria um campo específico para inserir e-mails -->
+    <!-- required exige o preenchimento desse campo -->
+
+    <br><br>
+    <!-- Insere duas quebras de linha -->
+</p>
+
+<p>    
+    <label for="telefone">whatsapp:</label>
+    <!-- Identifica o campo destinado ao WhatsApp -->
+
+    <input type="tel" id="telefone" name="whatsapp" placeholder="Digite seu whatsapp" required>
+    <!-- Cria um campo para inserir o número de telefone -->
+    <!-- type="tel" indica que o campo recebe um telefone -->
+
+    <br><br>
+    <!-- Insere duas quebras de linha -->
+</p>
+
+<p>
+    <label for="descricao">Descrição:</label>
+    <!-- Identifica o campo de descrição -->
+
+    <input type="text" id="descricao" name="descricao" placeholder="Digite uma descrição">
+    <!-- Cria um campo de texto para inserir uma descrição -->
+
+    <br><br>
+    <!-- Insere duas quebras de linha -->
+</p>
+
+     </Fieldset>
+     <!-- Finaliza o primeiro grupo de campos -->
+
+    <!-- Grupo 02 configuração de hardware -->
+
+     <h1>Fieldset 2</h1>
+     <!-- Cria o título do segundo grupo -->
+
+     <hr>
+     <!-- Adiciona uma linha horizontal para separar o conteúdo -->
+
+     <Fieldset>
+        <!-- Agrupa os campos de preferências de hardware -->
+
+        <legend><strong>2 - preferências de Hardware</strong></legend>
+        <!-- Define o título do grupo em negrito -->
+
+        <p>
+            <label for="GPU">Escolha a placa de vídeo:</label>
+            <!-- Identifica o campo de escolha da placa de vídeo -->
+
+            <select id="GPU" name="GPU"> <required>
+            <!-- Cria uma lista suspensa para selecionar uma placa de vídeo -->
+
+                <option value="gtx1650">NVIDIA GTX1650 4GB</option>
+                <!-- Primeira opção da lista -->
+
+                <option value="gtx1651">NVIDIA GTX1651 8GB</option>
+                <!-- Segunda opção da lista -->
+
+                <option value="gtx1652">NVIDIA GTX1652 16GB</option>
+                <!-- Terceira opção da lista -->
+
+            </select>
+            <!-- Finaliza a lista de seleção -->
+        </p>
+
+        <p>
+            <strong>Serviços e Adicionais:</strong>
+            <!-- Apresenta um título em negrito para as opções -->
+
+            <div>
+            <!-- Agrupa as opções de seleção -->
+
+            <input type="radio" id="jogos" name="objetivo" value="jogos"> <checked></input>
+            <!-- Cria uma opção de seleção única para jogos eletrônicos -->
+            <!-- radio permite selecionar apenas uma opção do mesmo grupo -->
+            <!-- name agrupa as opções e value define o valor enviado -->
+            <!-- checked indica a intenção de deixar a opção marcada -->
+
+            <label for="jogos">Jogos eletronicos</label>
+            <!-- Identifica a opção de jogos eletrônicos -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            <input type="radio" id="streaming" name="objetivo" value="streaming"></input>
+            <!-- Cria uma opção de seleção para live streaming -->
+
+            <label for="streaming">Live streaming</label>
+            <!-- Identifica a opção de transmissão ao vivo -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            <input type="radio" id="trabalho" name="objetivo" value="trabalho"></input>
+            <!-- Cria uma opção de seleção para atividades profissionais -->
+
+            <label for="trabalho">Edição de vídeo 3D / Arquitetura</label>
+            <!-- Identifica a opção de edição e arquitetura -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            </div>
+            <!-- Finaliza o agrupamento das opções -->
+        </p>
+
+         <p>
+            <strong>Serviços e Adicionais Desejados opcionais:</strong>
+            <!-- Apresenta o título dos serviços adicionais em negrito -->
+
+            <div>
+            <!-- Agrupa as opções de serviços adicionais -->
+
+            <input type="checkbox" id="rgb" name="Adicionais" value="RGB Extra"> <checked></input>
+            <!-- Cria uma caixa de seleção para o adicional RGB -->
+            <!-- checkbox permite selecionar mais de uma opção -->
+
+            <label for="rgb">Fita LED EGB adicional no gabinete</label>
+            <!-- Identifica o adicional de iluminação LED -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            <input type="checkbox" id="overclock" name="Adicionais" value="Overclock"> <checked></input>
+            <!-- Cria uma caixa de seleção para o adicional de overclock -->
+
+            <label for="overclock">perfil de overclock configurado na BIOS</label>
+            <!-- Identifica o serviço de configuração de overclock -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            <input type="checkbox" id="garantia_estendida" name="Adicionais" value="Garantia_3_anos"> <checked></input>
+            <!-- Cria uma caixa de seleção para a garantia estendida -->
+
+            <label for="garantia_estendida">Garantia estendida por 3 anos PixelGear</label>
+            <!-- Identifica o adicional de garantia por três anos -->
+
+            <br>
+            <!-- Insere uma quebra de linha -->
+
+            </div>
+            <!-- Finaliza o agrupamento dos adicionais -->
+        </p>
+
+        <p>
+            <label for="observacoes"><strong>Observações ou Dúvidas frequentes</strong></label>
+            <!-- Identifica o campo de observações em negrito -->
+
+            <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Descreva os jogos que pretendejogar"></textarea>
+            <!-- Cria uma área de texto para o cliente escrever observações -->
+            <!-- rows define a quantidade de linhas -->
+            <!-- cols define a largura aproximada do campo -->
+            <!-- placeholder apresenta uma mensagem de orientação -->
+        </p>
+
+        <p>
+            <label for="foto_referencia">Anexar prints ou foto de Referência</label>
+            <!-- Identifica o campo de anexar imagens -->
+
+            <input type="file" id="foto_referencia" name="foto_referencia" accept="image/*">
+            <!-- Cria um campo para selecionar arquivos do computador -->
+            <!-- accept="image/*" permite selecionar arquivos de imagem -->
+        </p>
+
+        <p>
+            <button type="submit">🚀Enviar Solicitação de Orçamento</button> 
+            <!-- Cria um botão para enviar a solicitação -->
+
+            <button type="reset">💀Limpar campos</button> 
+            <!-- Cria um botão para limpar os campos e restaurar os valores iniciais -->
+        </p>
+
+     </Fieldset>
+     <!-- Finaliza o segundo grupo de campos -->
+
+</body>
+<!-- Finaliza o corpo da página -->
+
+</html>
+<!-- Finaliza o documento HTML -->
